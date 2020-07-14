@@ -42,4 +42,21 @@ void mostrar(int n, int m[], char esc[][N][N], char nom[][N])
 			cout<<"Ingrese nombre de la escuela #"<<j+1<<": ";
 			fflush(stdin);
 			cin.getline(esc[i][j],N);
+      int main()
+{
+	int n,m[N];
+	char esc[N][N][N],nom[N][N];
+	do{
+		cout<<"Ingrese cantidad de facultades de la UNMSM: ";
+		cin>>n;
+	}while(n<0);
+	leer(n,m,esc,nom);
+	mostrar(n,m,esc,nom);
+	cout<<"------------------------------------------------\n";
+	mayorEscuelas(n,m,esc,nom);
+	cout<<"------------------------------------------------\n";
+	mostrarEscuelas(n,m,esc,nom);
+	
+}
+
 
